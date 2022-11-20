@@ -1,0 +1,40 @@
+﻿@model UpdateViewModel
+
+<div class="container">
+
+    <form method="POST" asp-route="employee-update" class="mt-5">
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control">
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="form-check">
+            <label asp-for="FatherName"></label>
+            <input asp-for="FatherName" class="form-control">
+            <span asp-validation-for="FatherName" class="text-danger"></span>
+        </div>
+        <div class="form-check">
+            <label asp-for="Fin"></label>
+            <input asp-for="Fin" class="form-control">
+            <span asp-validation-for="Fin" class="text-danger"></span>
+        </div>
+        <div class="form-check">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="row justify-content-end mt-3">
+        <div class="">
+            <a asp-route="employee-list" target="_blank" class="btn btn-secondary">Back to Employees</a>
+        </div>
+    </div>
+</div>
